@@ -1,0 +1,88 @@
+body{
+    background-image: url("../img/background.jpg");
+}
+
+#game1{
+    background-image: url("../img/games/snake.png");
+}
+
+#game2{
+    background-image: url("../img/games/space.jpg");
+}
+
+#game3{
+    background-image: url("../img/games/tetris.jpg");
+}
+
+.title_game{
+    height: 50px;
+    background-color: lightgray;
+    opacity: 0.8;
+}
+
+.titleGame{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 35px;
+}
+
+.notBLue{
+    text-decoration: none;
+}
+
+.gameDiv{
+    width: 100%;
+    border-radius: 6px;
+    opacity: 0.5;
+    background-color: beige;
+    transition: 1s;
+}
+
+.gameDiv:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 1s;
+}
+
+@media screen and (max-width: 767px) {
+    .gameDiv{
+        height: 250px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gameDiv{
+        height: 500px;
+        margin-top: 15px;
+    }
+}
+
+.jumbotron{
+    background: #3399ff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3399ff, #80bfff, #cce6ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3399ff, #80bfff, #cce6ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3399ff, #80bfff, #cce6ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3399ff, #80bfff, #cce6ff); /* Standard syntax */
+}
+
+/* Footer */
+.footer-bottom {
+    margin-top: 30px;
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
