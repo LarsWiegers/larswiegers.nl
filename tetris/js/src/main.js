@@ -10,7 +10,7 @@ requirejs.config({
 
 require(["src/Game", "src/Tetris"], function(Game, Tetris) {
 
-    var App = Game.extend({
+    App = Game.extend({
 
         init: function() {
             canvas.width = 480;
@@ -34,7 +34,7 @@ require(["src/Game", "src/Tetris"], function(Game, Tetris) {
 
             if (this.hasLoad) {
 
-                this.tetris.update(input);
+                this.tetris.update(Math.floor(Math.random() * 4) + 1);
                 this.tetris.draw(canvas.ctx);
 
             } else {
@@ -50,7 +50,7 @@ require(["src/Game", "src/Tetris"], function(Game, Tetris) {
 
 
     (function() {
-        var game = new App();
+        game = new App();
         game.run();
 
         window.onblur = game.stop.bind(game);

@@ -7,7 +7,7 @@ define([
     "src/Randomizer"
 ], function(GameBoard, StatManager, Tetramino, Block, Randomizer) {
 
-    var Tetris = Class.extend({
+    Tetris = Class.extend({
 
         init: function(cols, rows) {
 
@@ -39,9 +39,8 @@ define([
             this.setNextTetramino();
         },
 
-        update: function(inpt) {
+        update: function(input) {
             this.currentTetramino.setTo(this.blockControl, Block.NONE);
-
             if (inpt.pressed("up")) {
                 this.moveRotate();
             }

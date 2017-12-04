@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <!-- Slider -->
-                    <?php include "includes/script.html"; ?>
+<!--                    --><?php //include "includes/script.html"; ?>
                 </div>
             </div>
             <div class="row">

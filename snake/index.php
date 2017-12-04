@@ -12,28 +12,6 @@
         var Button;
         var Rotary;
     </script>
-    <script>
-        $(document).ready(function(){
-
-            setInterval(runFunction,50);
-            function runFunction() {
-                $.ajax(
-                    {url: "api/api.php",
-                        data: {},
-                        method: 'post',
-                        success: function(result) {
-                            Data = result.split(",");
-                            Button = parseInt(Data[0]);
-                            Rotary = Data[1];
-                            console.log(Data);
-                            if(Button == 1) {
-                                s.dir(1, 0);
-                            }
-                        }
-                    });
-            }
-        });
-    </script>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
@@ -80,7 +58,7 @@
         setInterval(runFunction,50);
         function runFunction() {
             $.ajax(
-                {url: "../api/api.php",
+                {url: "/project/api/api.php",
                     data: {},
                     method: 'post',
                     success: function(result) {
